@@ -25,3 +25,10 @@ D,5211,PFKL,phosphofructokinase,liver,type	K00850,pfkA,6-phosphofructokinase,1,[
 D,2203,FBP1,fructose-bisphosphatase,1	K03841,FBP,fructose-1,6-bisphosphatase,I,[EC:3.1.3.11]  
 D,8789,FBP2,fructose-bisphosphatase,2	K03841,FBP,fructose-1,6-bisphosphatase,I,[EC:3.1.3.11]
 ```
+
+Counting the number of As, Bs, Cs, and Ds, we see that there are 7 As, 51 Bs, 512 Cs. So in terms of sorting, it is probably best to build a table for all B's for the category that we want.
+
+## The process
+1) Make a csv for all the B levels labeled with the sorting category. The CSV should have B ID #, 0 (for False) or 1 (for True)  
+2) Gather a list of all genes in each B type    
+3) Return a list of all genes that are in all genes that were in that type
