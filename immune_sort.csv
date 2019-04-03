@@ -1,0 +1,51 @@
+09101,Carbohydrate metabolism,0
+09102,Energy metabolism,0
+09103,Lipid metabolism,0
+09104,Nucleotide metabolism,0
+09105,Amino acid metabolism,0
+09106,Metabolism of other aminoacids,0
+09107,Glycan biosynthesis and metabolism,0
+09108,Metabolismof cofactors and vitamins,0
+09109,Metabolismofterpenoidsandpolyketides,0
+09110,Biosynthesisofothersecondarymetabolites,0
+09111,Xenobioticsbiodegradationandmetabolism,1
+09112,Notincludedinregularmaps,0
+09121,Transcription,0
+09122,Translation,0
+09123,Foldingsortinganddegradation,0
+09124,Replicationandrepair,0
+09131,Membranetransport,0
+09132,Signaltransduction,0
+09133,Signalingmoleculesandinteraction,0
+09141,Transportandcatabolism,0
+09143,Cellgrowthanddeath,0
+09144,Cellularcommunity-eukaryotes,0
+09145,Cellularcommunity-prokaryotes,0
+09142,Cellmotility,0
+09151,Immunesystem,1
+09152,Endocrinesystem,0
+09153,Circulatorysystem,0
+09154,Digestivesystem,0
+09155,Excretorysystem,0
+09157,Sensorysystem,0
+09158,Development,0
+09149,Aging,0
+09161,Cancers:Overview,0
+09162,Cancers:Specifictypes,0
+09164,Neurodegenerativediseases,0
+09165,Substancedependence,0
+09166,Cardiovasculardiseases,0
+09167,Endocrineandmetabolicdiseases,0
+09171,Infectiousdiseases:Bacterial,1
+09172,Infectiousdiseases:Viral,1
+09174,Infectiousdiseases:Parasitic,1
+09175,Drugresistance:Antimicrobial,0
+09176,Drugresistance:Antineoplastic,0
+09181,Proteinfamilies:metabolism,0
+09182,Proteinfamilies:geneticinformationprocessing,0
+09183,Proteinfamilies:signalingandcellularprocesses,0
+09184,RNAfamily,0
+09191,Unclassified:metabolism,0
+09192,Unclassified:geneticinformationprocessing,0
+09193,Unclassified:signalingandcellularprocesses,0
+09194,Poorlycharacterized,0
