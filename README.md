@@ -32,3 +32,9 @@ Counting the number of As, Bs, Cs, and Ds, we see that there are 7 As, 51 Bs, 51
 1) Make a csv for all the B levels labeled with the sorting category. The CSV should have B ID #, B name, 0 (for False) or 1 (for True)  
 2) Gather a list of all genes in each B type    
 3) Return a list of all genes that are in all genes that were in that type
+
+# Orthology reader
+In this program it is necessary to convert the gene names from one species to another. Since I've had to to this multiple times, I'm just going to write code to do this any which way. Here's how it works:  
+```bash
+python3 orthology_reader.py <clade1> <clade2> <gene_list_clade1.txt>
+```
