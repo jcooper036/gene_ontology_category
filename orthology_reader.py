@@ -62,7 +62,7 @@ def load_ensbid(clade):
             line = line.split(',')
             if 'gene_name' not in line:
                 gene = line[0]
-                ensid = line[1]
+                ensid = line[1].split('.')[0]
                 enstable['gene_to_ensid'][gene] = ensid
                 enstable['ensid_to_gene'][ensid] = gene
 
@@ -72,10 +72,10 @@ def genes_to_ensbid(inlist, enstable):
     """given a file, reads in the genes, returns the list
     of their ensemble IDs"""
     ensembl_list = []
-
     for gene in inlist:
-        ensembl_list.append(enstable['gene_to_ensid'][gene])
-
+        if gene in enstable['gene_to_ensid']:
+            ensembl_list.append(enstable['gene_to_ensid'][gene])
+  
     return ensembl_list
 
 def ensid_to_genes(inlist, enstable):
@@ -83,7 +83,8 @@ def ensid_to_genes(inlist, enstable):
     gene_list = []
 
     for ensid in inlist:
-        ensembl_list.append(enstable['ensid_to_gene'][ensid])
+        if ensid in enstable['ensid_to_gene']:
+            gene_list.append(enstable['ensid_to_gene'][ensid])
 
     return gene_list
 
@@ -92,8 +93,9 @@ def clade_conversion(ensbl_list, ortho_dictionary):
     new_ensbl_list = []
 
     for ensid in ensbl_list:
-        new_ensbl_list.append(ortho_dictionary[ensid])
-
+        if ensid in ortho_dictionary:
+            new_ensbl_list.append(ortho_dictionary[ensid])
+ 
     return new_ensbl_list
 
 def read_list(list_file):
